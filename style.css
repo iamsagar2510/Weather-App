@@ -198,6 +198,65 @@ body::before {
     opacity: 0.85;
 }
 
+@media (max-width: 600px) {
+    body {
+        padding: 0;
+        min-height: 100vh;
+        background-position: center top;
+    }
+    .card {
+        padding: 16px 2vw 12px 2vw;
+        max-width: 98vw;
+        border-radius: 14px;
+    }
+    .search {
+        gap: 8px;
+        margin-bottom: 18px;
+    }
+    .search input {
+        padding: 10px 12px;
+        font-size: 15px;
+    }
+    .search button {
+        width: 40px;
+        height: 40px;
+    }
+    .search button img {
+        width: 16px;
+        height: 16px;
+    }
+    .weather-icon {
+        width: 70px;
+    }
+    .temp {
+        font-size: 32px;
+    }
+    .city {
+        font-size: 18px;
+    }
+    .details {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 12px;
+    }
+    .col {
+        min-width: unset;
+        width: 100%;
+        padding: 8px 10px;
+        gap: 8px;
+    }
+    .col img {
+        width: 24px;
+        height: 24px;
+    }
+    .humidity, .wind {
+        font-size: 15px;
+    }
+    .col p:last-child {
+        font-size: 13px;
+    }
+}
+
 @media (max-width: 500px) {
     .card {
         padding: 22px 4vw 18px 4vw;
